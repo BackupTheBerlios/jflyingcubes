@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : example.xml
+    Created on : 23. April 2005, 19:04
+    Author     : Daniel Moos
+    Description:
+        Purpose of the document follows.
+-->
+
+<presenter>
+    <page name="1" auto="true" delay="10050" sound="D:\\Projects\\jflyingcubes\\audio\\22-new.wav" loop="false">
+        <paint class="de.jflyingcubes.player.paint.Gradient" x1="0" y1="400" x2="600" y2="400">
+            <color value="#00FF00"/>
+            <color value="#FF00FF"/>
+        </paint>
+            <cubes class="de.jflyingcubes.player.cubes.Text"
+                    bordercolor="null"
+                    background="#00FF00"
+                    position="150,200"
+                    size="100,100">
+                <paint class="de.jflyingcubes.player.paint.Gradient" x1="0" y1="0" x2="400" y2="500">
+                    <color value="#000000"/>
+                    <color value="#FFFFFF"/>
+                </paint>
+                <property name="text" value="this is a test"/>
+                <property name="foreground" value="#FFFFFF"/>
+            <plugin class="de.jflyingcubes.player.cubes.plugins.TypedTextPlugin" delay="100">
+                <property name="typed" value="true"/>
+            </plugin>
+            <plugin class="de.jflyingcubes.player.cubes.plugins.MovePlugin" delay="100">
+                <property name="move" value="400,300"/>
+                <property name="pixel" value="4"/>
+            </plugin>
+        </cubes>
+        <cubes class="de.jflyingcubes.player.cubes.Image"
+                    bordercolor="null" 
+                    x="15"
+                    y="15"
+                    width="100"
+                    height="100">
+                <property name="image" value="/logo.gif"/>
+            <plugin class="de.jflyingcubes.player.cubes.plugins.MovePlugin" delay="100">
+                <property name="move" value="100,100" />
+            </plugin>
+        </cubes>
+    </page>
+    <page automatic="false">
+        <cubes class="de.jflyingcubes.player.cubes.Image"
+                    bordercolor="null" 
+                    x="-600"
+                    y="-400" 
+                    width="600"
+                    height="400">
+                <property name="image" value="/logo.gif"/>
+            <plugin class="de.jflyingcubes.player.cubes.plugins.MovePlugin" delay="50">
+                <property name="move" value="0,0" />
+                <property name="pixel" value="6"/>
+            </plugin>
+        </cubes>
+        <cubes class="de.jflyingcubes.player.cubes.Text"
+                    bordercolor="null"
+                    position="150,200"
+                    size="100,100">
+                <property name="text" value="this is a test"/>
+                <property name="foreground" value="#FF00FF"/>
+            <plugin class="de.jflyingcubes.player.cubes.plugins.TypedTextPlugin" delay="100">
+                <property name="typed" value="true"/>
+            </plugin>
+            <plugin class="de.jflyingcubes.player.cubes.plugins.MovePlugin" delay="100">
+                <property name="move" value="400,300"/>
+                <property name="pixel" value="1"/>
+            </plugin>
+        </cubes>
+    </page>
+</presenter>
