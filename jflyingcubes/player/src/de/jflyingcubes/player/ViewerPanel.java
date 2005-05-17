@@ -22,6 +22,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -30,7 +31,7 @@ import javax.swing.Timer;
  *
  * @author dm
  */
-public class ViewerPanel extends JPanel implements PropertyChangeListener, MouseListener, MouseMotionListener{
+public class ViewerPanel extends JPanel implements PropertyChangeListener, MouseListener, MouseMotionListener {
     
     private final Pages pages;
     
@@ -109,7 +110,8 @@ public class ViewerPanel extends JPanel implements PropertyChangeListener, Mouse
         return false;
     }
     
-    public void mouseDragged(MouseEvent evt) {}
+    public void mouseDragged(MouseEvent evt) {
+    }
     
     public void mouseExited(MouseEvent evt) {
     }
@@ -151,7 +153,7 @@ public class ViewerPanel extends JPanel implements PropertyChangeListener, Mouse
             updatePage();
         
     }
-
+    
     public void paint(Graphics g) {
         super.paint(g);
         ((Graphics2D)g).setRenderingHints(Rendering.getRenderingHints());
@@ -162,7 +164,7 @@ public class ViewerPanel extends JPanel implements PropertyChangeListener, Mouse
         }
     }
     
-    public void propertyChange(java.beans.PropertyChangeEvent evt) {
+    public void propertyChange(PropertyChangeEvent evt) {
         updateUI();
     }
 }
