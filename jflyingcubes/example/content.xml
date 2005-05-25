@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+    <head>
+        <meta type="author" value="blah"/>
+    </head>
+    
+    <page style="Page1" begin="0" dur="300">
+        <cube type="text" width="100" height="300" x="20" y="20">
+            <style name="Standard" />
+<!--            <animation name="" />  -->
+        </cube>
+        
+        <cube type="image" width="100" height="300" x="40" y="40">
+            <image src="images/logo.gif" /> <!-- fill="noscale-center" || fill="no-scale" -->
+        </cube>
+    </page>
+</content>

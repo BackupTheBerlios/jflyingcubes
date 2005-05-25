@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jflyingcubes-example" default="pack" basedir=".">
+    <target name="pack">
+        <zip destfile="example.jfc" basedir=".">
+            <zipfileset dir="." excludes="build.xml"/>
+            <zipfileset dir=".">
+                <include name="**/*.xml"/>
+                <include name="**/*.gif"/>
+            </zipfileset>
+        </zip>
+    </target>
+</project>

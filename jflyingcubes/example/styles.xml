@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : styles.xml
+    Created on : 24. Mai 2005, 20:42
+    Author     : dm
+    Description:
+        Purpose of the document follows.
+-->
+
+<styles>
+    <style type="page" name="Page1" >
+        <background paint="gradient">
+            <color type="from">#000000</color>
+            <color type="to">#FFFFFF</color>
+            <point type="from">
+                <x>0</x>
+                <y>240</y>
+            </point>
+            <point type="to">
+                <x>600</x>
+                <y>240</y>
+            </point>            
+        </background>
+    </style>
+    <style type="text" name="Standard">
+        <background paint="color">
+            <color>#99AA00</color>
+        </background>
+        <font name="Courier" size="10" style="plain"/>
+        <foreground paint="color">
+            <color>#000000</color>
+        </foreground>
+    </style>
+    <style type="image" name="img001">
+        <background paint="image">
+            <img src="images/logo.gif" />
+        </background>
+    </style>
+</styles>
